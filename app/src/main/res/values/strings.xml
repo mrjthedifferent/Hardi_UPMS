@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hardi_UPMS</string>
+    <string name="hardi_up">লগইন করুন</string>
+    <string name="email">ইমেইল</string>
+    <string name="minimum_password">পাসওয়ার্ড অনেক ছোট, কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড প্রবেশ করুন</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">ইমেইল লিখুন</string>
+    <string name="hint_password">পাসওয়ার্ড লিখুন</string>
+    <string name="btn_login">প্রবেশ করুন</string>
+    <string name="btn_login_f">লগইন</string>
+    <string name="sign_out">বেরিয়ে যান</string>
+    <string name="auth_failed">আপনি লগইন করতে পারেন নি, দয়া করে পুনরায় চেষ্টা করুন</string>
+    <string name="n">বন্ধ\n করুন</string>
+    <string name="upms">ইউনিয়ন পরিষদ ম্যানেজমেন্ট সিস্টেম (ইউপিএমএস)</string>
+    <string name="welcome">স্বাগতম</string>
+    <string name="visit_web">ওয়েব পোর্টাল</string>
+    <string name="about">বিস্তারিত</string>
+    <string name="title_activity_web">webActivity</string>
+</resources>

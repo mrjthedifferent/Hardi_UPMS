@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="mrj.odepe.hardi_upms.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_layout"
+        android:background="@drawable/login_background_img">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:id="@+id/button_off"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:background="@drawable/radious_shape"
+                android:text="@string/n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:textColor="#fff"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/upms"
+                android:layout_toEndOf="@+id/button_off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textColor="#fff"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/text1"
+                android:layout_alignEnd="@+id/text1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/button_off"
+                android:background="#FF0000"/>
+
+
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/select_option"
+                android:background="@drawable/radious_shape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/welcome"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#fff"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFF"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/shape_login"
+                android:layout_below="@+id/select_option">
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="@string/btn_login_f"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/button_webportal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/button_login"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="@string/visit_web"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/button_webmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/button_webportal"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="ওয়েব মেইল"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/button_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_webportal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="নোটিশ"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/button_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/button_notice"
+                    android:layout_below="@+id/button_webportal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="ইউপি সদস্যবৃন্দ"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/button_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/button_members"
+                    android:layout_below="@+id/button_webportal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="@string/about"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/login_layout"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="57dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/upms_name"
+                    android:background="@drawable/radious_shape">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/hardi_up"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#fff"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#FFF"/>
+
+                </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upms_name">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/shape_login"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                //android:theme="@style/label_color">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                //android:theme="@style/label_color">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="@string/btn_login"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_back2login"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/loginbutton_shape"
+                    android:text="বেরিয়ে যান"
+                    android:textColor="#fff" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+             </ScrollView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_login">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/developer"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ডেভেলপারঃ মোঃ মাহফুজুর রহমান জুয়েল, উদ্যোক্তা, হারদী ইউনিয়ন পরিষদ, আলমডাঙ্গা, চুয়াডাঙ্গা"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

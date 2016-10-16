@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/oops"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unable to connect to the internet...."
+                android:textColor="#000000"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/imageView4"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Check your internet connection"
+                android:id="@+id/textView12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView11"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You don't seem to have an active internet connection.\n Please check your connection and try again.\nOtherwise, enable your mobile data or wifi.."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:id="@+id/textView13"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView12"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GO BACK"
+                android:id="@+id/button"
+                android:background="@drawable/loginbutton_shape"
+                android:layout_below="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="TRY AGAIN"
+                android:background="@drawable/loginbutton_shape"
+                android:id="@+id/button2"
+                android:layout_alignBottom="@+id/button"
+                android:layout_alignRight="@+id/textView13"
+                android:layout_alignEnd="@+id/textView13" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GO TO SETTINGS"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton_shape"
+                android:id="@+id/button3"
+                android:layout_below="@+id/button"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_alignRight="@+id/textView13"
+                android:layout_alignEnd="@+id/textView13" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

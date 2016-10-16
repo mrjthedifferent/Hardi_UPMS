@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "895453254366",
+    "firebase_url": "https://hardiupms.firebaseio.com",
+    "project_id": "hardiupms",
+    "storage_bucket": "hardiupms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895453254366:android:cbc5f9020dd065d0",
+        "android_client_info": {
+          "package_name": "mrj.odepe.hardi_upms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895453254366-cl700lvbpagbkvddii6n2n3t3oql5u5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7acjX6P0jhZQI-sC2IPzNGtMxmwlrbgk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
